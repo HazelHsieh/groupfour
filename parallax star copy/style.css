@@ -212,7 +212,7 @@ section .container > *{
 }
 
 footer nav {
-    background-color: #744949;
+    background-color: #181717;
 }
 
 @media (max-width:850px) {
