@@ -17,14 +17,14 @@
     <!-- aos Core CSS CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
-    <link rel="stylesheet" href="style.css">
+     <!--  自己寫的 CSS  -->
+    <link rel="stylesheet" href="css/index.layout.css">
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container">
               <a class="navbar-brand" href="#">
                 <h3 class="logo"><img src="../group/img/logo.png" alt="" width="50px"> <span>一起看星星</span></h3>
@@ -33,7 +33,6 @@
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-        
               <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
                   <li class="nav-item ">
@@ -46,6 +45,9 @@
                     <a class="nav-link" href="#">會員登入</a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link" href="#">購物車</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="#"><i class="far fa-star"></i></a>
                   </li>
         
@@ -53,41 +55,16 @@
               </div>
             </div>
         </nav>
-        <h1 class="big-title translate" data-speed="0.1">Astronomy.</h1>
-
-        <img src="./img/person1.png" class="person1 translate" data-speed="-0.2" alt="">
-        <img src="./img/mountain01.png" class="mountain01 translate" data-speed="-0.25" alt="">
-        <img src="./img/mountain02.png" class="mountain02 translate" data-speed="0.4" alt="">
-        <img src="./img/sky.png" class="sky translate" data-speed="0.5" alt="">
     </header>
 
-    <section>
-        <div class="shadow"></div>
-        <div class="container">
-            <div class="content opacity"> 
-                <h3 class="title">About
-                    <div class="border"></div>
-                </h3>
-                <p class="text">大家好，我們主要是推廣大家在閒暇之時，
+    <main>
 
-                  多看看其他事物，例如:看星星。
-                  
-                   除此之外，我們還開放打賞，希望可以多支持我們，
-                  
-                  我們也會持續更新，為想要關注星星動態的人們，
-                  
-                  能快速了解最新資訊及瀏覽。</p>
 
-            </div>
-            <div class="imgcontainer opacity">
-                <img src="img/image.jpg" alt="">
-            </div>
-        </div>
-    </section>
+    </main>
 
 
     <footer>
-      <nav class="navbar navbar-expand-lg navbar-dark d-flex">
+      <nav class="footer-nav navbar navbar-expand-lg navbar-dark ">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="../group/img/logo.png" width="50px" height="50px" alt="">
@@ -95,18 +72,31 @@
           <div class=" navbar-collapse ">
             <ul class="navbar-nav ml-auto my-2 navbar-nav-scroll">
               <li class="nav-item">
-                <a class="nav-link" href="#">聯絡我們</a>
+                <a class="nav-link" href="#">公司住址</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Donate</a>
+                <a class="nav-link" href="#">QRcode</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">地址</a>
+                <a class="nav-link" href="#">交通</a>
               </li>
+  
             </ul>
           </div>
         </div>
       </nav>
+    <div class="bg-secondary">
+        <div class="container d-flex justify-content-between" >
+            <div class="copyright">
+                © 2022 Tailblocks — @Hazelnut
+            </div>
+            <div class="community">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
     </footer>
 
     <!-- jquery Core JS CDN -->
