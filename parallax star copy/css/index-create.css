@@ -7,11 +7,15 @@
     padding: 5%;
 }
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .article form{
     padding: 5%;
     width: 80%;
     background-color: #EAB87F;
-    margin-right: auto;
 }
 .article form .article-title{
     text-align: center;
