@@ -37,3 +37,44 @@ window.addEventListener('scroll', () =>{
     //裝飾線
     border.style.width = `${scroll / (sectionY.top + section_height) * 30}%`;
 })
+
+
+// 先把兩個標籤找出來
+const tabElements = document.querySelectorAll('.tab');
+const pageElements = document.querySelectorAll('.page');
+const contentElements = document.querySelectorAll('.content');
+
+
+
+//tabElements.forEach 是按鈕都選一次
+//(function (tabElement,index) 元素加index是索引值，對應到contenElemnts，才不會對應不到
+
+
+tabElements.forEach(function (tabElement, index) {
+
+  //觸發tabElement 監聽事件
+  tabElement.addEventListener('click', function () {
+
+    //tabElements.forEach 是按鈕都選一次
+    tabElements.forEach(function (tabElement) {
+
+      //
+      tabElement.classList.remove('active')
+      
+
+    })
+    //tabElemen可以換成this   this指用在addEventListener點擊的時候
+    tabElement.classList.add('active');
+
+    //contentElements.forEach 是按鈕都選一次
+    contentElements.forEach(function (contentElement) {
+      contentElement.classList.remove('active')
+    });
+    pageElements.forEach(function (pageElement) {
+        pageElement.classList.remove('active')
+    });
+
+    contentElements[index].classList.add('active');
+    //pageElements[index].classList.add('active');
+  });
+});
