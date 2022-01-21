@@ -6,7 +6,6 @@
     background-size: cover;
     background-position: center;
     padding: 5%;
-    height: 100vh;
     
 }
 .all-path:hover {
@@ -33,9 +32,6 @@
     position: relative; 
 }
 .map .container .map-box .guide-box .map-tabs{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     cursor: pointer;
 }
@@ -51,13 +47,6 @@
     .map .container .map-box .guide-box .guide-content {
         width: 40%;
     }
-
-}
-@media (max-width:768px){
-    .map .container .map-box .guide-box .guide-content {
-        width: 50%;
-    }
-
 }
 
 .map .container .map-box .guide-box .guide-content-none{
@@ -66,33 +55,33 @@
 
 .map .container .map-box .guide-box #Yilan{
     position: absolute;
-    top: 0px;
-    left: 350px;
+    top: 0%;
+    left: 80%;
 }
 .map .container .map-box .guide-box #Keelung{
     position: absolute;
-    top: -80px;
-    left: 250px;
+    top: -6%;
+    left: 80%;
 }
 .map .container .map-box .guide-box #Taipei{
     position: absolute;
-    top: -70px;
-    left: 200px;
+    top: -8%;
+    left: 60%;
 }
 .map .container .map-box .guide-box #Chiayi{
     position: absolute;
-    top: 100px;
-    left: 50px;
+    top: 30%;
+    left: 25%;
 }
 .map .container .map-box .guide-box #Nantou{
     position: absolute;
-    top: 50px;
-    left: 300px;
+    top: 15%;
+    left: 70%;
 }
 .map .container .map-box .guide-box #Taichung{
     position: absolute;
-    top: 30px;
-    left: 100px;
+    top: 10%;
+    left: 35%;
 }
 
 .map .container .map-box .guide-box .guide-content p{
