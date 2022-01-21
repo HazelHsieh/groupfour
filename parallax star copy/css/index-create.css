@@ -5,6 +5,7 @@
     background-size: cover;
     background-position: center;
     padding: 5%;
+    cursor: pointer;
 }
 
 .container{

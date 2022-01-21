@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display-swap');
+
+.map {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5%;
+    height: 100vh;
+    
+}
+.all-path:hover {
+    fill: blue;
+}
+
+.clicked {
+    fill: blue;
+}
+
+.map .container p{
+    text-align: center;
+    font-size: 30px;
+    
+}
+.map .container .map-box{
+    position: relative;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  */
+}
+
+.map .container .map-box .map-tabs {
+    position: absolute;
+    left: 0;
+    width: 40%;
+    cursor: pointer;
+}
+
+.map .container .map-box .contents {
+    position: absolute;
+    right: 0;
+    width: 60%;
+    margin-left: 10px;    
+}
+@media (max-width:768px) {
+    .map .container .map-box {
+        flex-direction: column;
+    }
+    .map .container .map-box .map-tabs {
+        width: 100%;
+    }
+
+    .map .container .map-box .contents {
+        width: 100%;
+    }
+}
+
+
+.map .container .map-box .content-none {
+    display: none;
+}
+
+.map .container .map-box .contents .content {
+    width: 100%;
+}
+
+.map .container .map-box .contents .content .card{
+    color: white;
+    background-color: #809A97;
+    
+}
+
+.map .container .map-box .contents .content .card p {
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+
+
+
