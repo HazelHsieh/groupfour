@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background-color: #17182f;
+}
+
+
+.container{
+  width: 100%;
+}
+
+.info > .container p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.info-box{
+  display: flex;
+  margin: 20px 0;
+}
+.info-box .info-day .day-mm::after{
+  content: '';
+  width: 3px;
+  height: 60px;
+  background-color: #577f92;
+  display: block;
+  transform: rotate(50deg);
+  margin-left: 22px;
+}
+.info-box .info-day .day-mm2::after{
+  content: '';
+  width: 3px;
+  height: 59px;
+  background-color: #577f92;
+  display: block;
+  transform: rotate(50deg);
+  margin-left: 16px;
+}
+.info-box .info-decor{
+  position: relative;
+  margin-top:55px;
+  border: solid 2px #577f92;
+}
+.info-box .info-card span{
+  letter-spacing: 1.5px;
+}
