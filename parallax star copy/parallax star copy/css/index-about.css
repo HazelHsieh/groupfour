@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    overflow: hidden;
+    background-color: #000;
+}
+.about{
+  background-image: url("../img/bg.png");
+  
+
+  height: 100vh;
+
+  background-position: center 0;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  background-size: cover;
+
+  -webkit-background-size: cover;
+
+  -o-background-size: cover;
+
+  -moz-background-size: cover;
+
+  -ms-background-size: cover;
+
+   
+}
+.container{
+    
+    flex-wrap: wrap;
+    display: flex;
+}
+.border{
+    width: 1100px;
+    height: 70vh;
+    background-image: url(../img/sky.png);
+    opacity: 0.5;
+    
+    position: absolute;
+    left: 50%;
+    margin-left: -555px;
+   
+}
+
+.surprise{
+    position: absolute;
+    line-height:50px;
+    letter-spacing:50px;
+    color:rgba(154, 245, 9, 0.623);
+    
+    width:1100px;
+    left:50%;
+    margin-left: -505px;
+    font-size:20px;
+}
+.moving-img{
+    width: 900px;
+    height: 400px;
+}
+
+.block{
+    width: 1100px;
+    margin-left: 50px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.link1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -400px;
+    margin-top: 130px;
+    font-size: 25px;
+    color: aliceblue;
+}
+.link2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: 150px;
+    margin-top: 130px;
+    font-size: 25px;
+    color: aliceblue;
+}
+.block1{
+    width: 1100px;
+    margin-top: 80px;
+    
+    
+}
+.img-style{
+    display: flex;
+    justify-content: space-between;
+}
+.href-style{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.h-style{
+    margin: -110px 74px; 
+    color: yellowgreen; 
+}
+.h-style1{
+    position:absolute;
+    left: 50%;
+    margin: -110px -190px;
+    color: white;
+}
+.h-style2{
+    position:absolute;
+    left: 50%;
+    margin: -110px 120px;
+    color: white;
+}
+.h-style3{
+    margin: -110px 60px;
+    color: white;
+}
+
+
+
+
+
+
