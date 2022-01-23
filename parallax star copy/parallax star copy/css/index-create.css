@@ -1,0 +1,41 @@
+
+.article {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5%;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.article form{
+    padding: 5%;
+    width: 80%;
+    background-color: #EAB87F;
+}
+.article form .article-title{
+    text-align: center;
+    font-size: 30px;
+}
+.article form .row{
+    flex-flow: column;
+    margin: 5px;
+
+}
+.article form .row.btn{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+}
+
+.article form .row.btn button{
+    margin: 5px;
+    padding: 5px;
+}
+
