@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        /* Relative positioning*/
+        #image-map {
+            position: relative;
+            margin: 150px auto 20px auto;
+        }
+
+        /* Hide the original tooltips contents */
+        .pin {
+            display: none;
+        }
+
+        /* Begin styling the tooltips and pins */
+        .tooltip-up,
+        .tooltip-down {
+            position: absolute;
+            background: url(https://i.imgur.com/13rZbuk.png);
+            width: 25px;
+            height: 37px;
+        }
+
+        .tooltip-down {
+            background-position: 0 -37px;
+        }
+
+        .tooltip {
+            display: none;
+            width: 200px;
+            cursor: help;
+            text-shadow: 0 1px 0 #fff;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            z-index: 999;
+            margin-left: -115px;
+            padding: 15px;
+            color: #222;
+            border-radius: 5px;
+            box-shadow: 0 3px 0 rgba(0, 0, 0, .7);
+            background: #fff1d3;
+            background: linear-gradient(top, #fff1d3, #ffdb90);
+        }
+
+        .tooltip::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            margin-left: -10px;
+            border-bottom: 10px solid #fff1d3;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+        }
+
+        .tooltip-down .tooltip {
+            bottom: 12px;
+            top: auto;
+        }
+
+        .tooltip-down .tooltip::after {
+            bottom: -10px;
+            top: auto;
+            border-bottom: 0;
+            border-top: 10px solid #ffdb90;
+        }
+
+        .tooltip h2 {
+            font: bold 1.3em 'Trebuchet MS', Tahoma, Arial;
+            margin: 0 0 10px;
+        }
+
+        .tooltip ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="image-map">
+        <img width="611" height="438" src="https://i.imgur.com/VlW9u1t.png" alt="Our Locations">
+        <div class="pin pin-down" data-xpos="115" data-ypos="125">
+            <h2>Willowbrook Place</h2>
+            <ul>
+                <li><strong>123 Street Address</strong></li>
+                <li>City, ST, 12345</li>
+                <li><strong>(555) 555-5555</strong></li>
+                <li><a href="#" target="_blank">Website</a></li>
+                <li>Coming in Spring 2015</li>
+            </ul>
+        </div>
+        <div class="pin pin-down" data-xpos="215" data-ypos="175">
+            <h2>Ambergrove Place</h2>
+            <ul>
+                <li><strong>123 Street Address</strong></li>
+                <li>City, ST, 12345</li>
+                <li><strong>(555) 555-5555</strong></li>
+                <li><a href="#" target="_blank">Website</a></li>
+                <li>Coming in Spring 2015</li>
+            </ul>
+        </div>
+        <div class="pin" data-xpos="255" data-ypos="65">
+            <h2>Chelsea Place</h2>
+            <ul>
+                <li><strong>123 Street Address</strong></li>
+                <li>City, ST, 12345</li>
+                <li><strong>(555) 555-5555</strong></li>
+                <li><a href="#" target="_blank">Website</a></li>
+                <li>Coming in Spring 2015</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            // set the image-map width and height to match the img size
+            $('#image-map').css({
+                'width': $('#image-map img').width(),
+                'height': $('#image-map img').height()
+            })
+
+            //tooltip direction
+            var tooltipDirection;
+
+            for (i = 0; i < $(".pin").length; i++) {
+                // set tooltip direction type - up or down             
+                if ($(".pin").eq(i).hasClass('pin-down')) {
+                    tooltipDirection = 'tooltip-down';
+                } else {
+                    tooltipDirection = 'tooltip-up';
+                }
+
+                // append the tooltip
+                $("#image-map").append("<div style='left:" + $(".pin").eq(i).data('xpos') + "px;top:" + $(".pin").eq(i).data('ypos') + "px' class='" + tooltipDirection + "'>\
+                                        <div class='tooltip'>" + $(".pin").eq(i).html() + "</div>\
+                                </div>");
+            }
+
+            // show/hide the tooltip
+            $('.tooltip-up, .tooltip-down').mouseenter(function () {
+                $(this).children('.tooltip').fadeIn(100);
+            }).mouseleave(function () {
+                $(this).children('.tooltip').fadeOut(100);
+            })
+        });
+    </script>
+</body>
+
+</html>

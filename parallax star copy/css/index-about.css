@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    overflow: hidden;
+    background-color: #000;
+}
+.about{
+  background-image: url("../img/img/bg2.png");
+  
+
+  height: 100vh;
+
+  background-position: center 0;
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  background-size: cover;
+
+  -webkit-background-size: cover;
+
+  -o-background-size: cover;
+
+  -moz-background-size: cover;
+
+  -ms-background-size: cover;
+  position: relative;
+
+   
+}
+.container{
+    
+    flex-wrap: wrap;
+    display: flex;
+}
+.border{
+    width: 1100px;
+    height: 70%;
+    max-width: 100%;
+    background-image: url(../img/sky.png);
+    opacity: 0.5;
+    
+    position: absolute;
+    left: 50%;
+    margin-left: -555px;
+   
+}
+
+.surprise{
+    position: absolute;
+    line-height:50px;
+    letter-spacing:50px;
+    color:wheat;
+    
+    width:1100px;
+    max-width: 100%;
+    height: auto;
+    left:50%;
+    margin-left: -505px;
+    font-size:15px;
+    letter-spacing: 15px;
+}
+.moving-img{
+    width: 900px;
+    height: 400px;  
+}
+
+.block{
+    width: 1100px;
+   
+    margin-top: -50px;
+    padding-bottom: 145px;
+    
+    
+}
+.img-style{
+    display: flex;
+    justify-content: space-between;
+}
+.href-style{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.link1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -420px;
+    margin-top: -20px;
+    font-size: 20px;
+    color: white;
+}
+.link2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: 240px;
+    margin-top: -20px;
+    font-size: 20px;
+    color: white;
+}
+.block1{
+    width: 1100px;
+     
+}
+.img1-style{
+    display: flex;
+    justify-content: space-between;
+}
+.href1-style{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    
+    
+}
+.h-style{
+    margin: -110px 74px; 
+    color:white; 
+}
+.h-style1{
+    position:absolute;
+    left: 50%;
+    margin: -110px -190px;
+    color: white;
+}
+.h-style2{
+    position:absolute;
+    left: 50%;
+    margin: -110px 120px;
+    color: white;
+}
+.h-style3{
+    margin: -110px 60px;
+    color: white;
+}
+
+
+
+
