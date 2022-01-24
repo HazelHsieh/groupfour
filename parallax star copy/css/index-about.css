@@ -71,7 +71,7 @@
 .block{
     width: 1100px;
    
-    margin-top: -50px;
+    margin-top: -10px;
     padding-bottom: 145px;
     
     
@@ -106,6 +106,7 @@
 }
 .block1{
     width: 1100px;
+    margin-top: 70px;
      
 }
 .img1-style{
@@ -115,13 +116,16 @@
 .href1-style{
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-    
+    margin-top: 40px; 
     
 }
+
+
 .h-style{
+    position: absolute;
     margin: -110px 74px; 
-    color:white; 
+    color:white;
+    
 }
 .h-style1{
     position:absolute;
@@ -129,6 +133,8 @@
     margin: -110px -190px;
     color: white;
 }
+
+
 .h-style2{
     position:absolute;
     left: 50%;
@@ -136,10 +142,21 @@
     color: white;
 }
 .h-style3{
-    margin: -110px 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 360px 425px;
     color: white;
 }
-
+img:hover{
+    
+    transform: scale(1.2);
+ }
+ a:hover{
+    text-decoration:none;
+    color: lawngreen;
+ }
+ 
 
 
 
